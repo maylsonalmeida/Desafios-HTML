@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <form action="Contatos" method="get">
+        <fieldset>
+            <legend><strong>Vamos conversar?</strong></legend>
+            <br>
+            <div>
+                <label for="subject">Assunto:</label>
+
+                <select name="subject" id="subject">
+                    <option value="job">Oportunidades de emprego</option>
+                    <option value="share">Cursos para aprimoramento</option>
+                    <option value="suggest">Desenvolvimento Web</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="name">Nome completo</label>
+            <br>
+                <input type="text" name="name" id="name" placeholder="Seu nome" size="32">
+            </div>
+            <br>
+            <div>
+                <label for="email">E-mail</label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="exemplo@dominio.com" required>
+            </div>
+            <br>
+            <div>
+                <label for="tel">Telefone</label>
+                <br>
+                <input type="tel" name="tel" id="tel" placeholder="(XX) X XXXX-XXXX" maxlength="11" minlength="11" title="Digite seu telefone com DDD + 9 + Número completo" required>
+            </div>
+
+                <p>
+                    Tem Whatsapp?
+
+                    <input type="radio" id="yes" name="whatsapp" value="yes">
+                    <label for="yes">Sim</label>
+    
+                    <input type="radio" id="no" name="whatsapp" value="no">
+                    <label for="no">Não</label>
+                </p>
+                <p>
+                    Tem Telegram?
+
+                    <input type="radio" id="yes" name="telegram" value="yes">
+                    <label for="yes">Sim</label>
+    
+                    <input type="radio" id="no" name="telegram" value="no">
+                    <label for="no">Não</label>
+                </p>
+
+            <div>
+                <label for="message">Mensagem</label>
+                <br>
+                <textarea name="message" id="message" cols="27" rows="10"></textarea>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" name="call" value="yes" id="call">
+                <label for="call">Aceito receber ligações e/ou email</label>
+            </div>
+<br><br>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
